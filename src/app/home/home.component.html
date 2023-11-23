@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>About Me</h2>
+        <img
+          src="../../assets/profile_pic.jpg"
+          alt="profile picture"
+          width="256"
+          height="auto"
+          class="rounded-circle"
+        />
+        <p>
+          Senior at UCLA studying CS <br />
+          Vastly interested in the fields of machine learning and web
+          development. <br />
+          Currently working on a location based music discovery app that's
+          coming soon! <br />
+          Check out my projects here!
+        </p>
+      </div>
+    </div>
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>Featured Project</h2>
+        <h4>{{ featuredProject.name }}</h4>
+      </div>
+
+      <carousel>
+        <div *ngFor="let picture of featuredProject.pictures">
+          <slide
+            ><img
+              src="{{ picture }}"
+              alt="slide"
+              style="display: block; width: 100%; height: 350px"
+          /></slide>
+        </div>
+      </carousel>
+      <p class="mt-2">{{ featuredProject.summary }}</p>
+      <p>Visit Portfolio Summary for More!</p>
+    </div>
+  </div>
+</div>

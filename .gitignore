@@ -37,6 +37,12 @@ yarn-error.log
 testem.log
 /typings
 
+# Terraform
+/.terraform
+variables.tf
+.terraform
+
+
 # System files
 .DS_Store
 Thumbs.db

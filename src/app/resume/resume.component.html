@@ -1,0 +1,194 @@
+<div class="container text-center">
+  <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">
+    Download PDF Resume
+  </button>
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isWorkExperienceOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Work Experience</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isWorkExperienceOpen" style="color: white">></div>
+            <div *ngIf="isWorkExperienceOpen" style="color: white">v</div>
+          </div>
+        </button>
+        <div style="text-align: left">
+          <h2 class="mb-0">Software Engineer Intern</h2>
+
+          <a
+            href="https://www.md7.com/"
+            target="_blank"
+            class="text-decoration-none h3 text-primary"
+            rel="noopener noreferrer"
+          >
+            MD7
+          </a>
+          <h4>
+            Project: Software application to analyze cell site development data
+          </h4>
+          <ul>
+            <li>
+              Built feature that allows managers to analyze 5,000,000+
+              development steps across 300,000+ cell sites, providing insights
+              on slower steps.
+            </li>
+            <li>
+              Calculated time elapsed data between development steps to help
+              managers optimize time for over 58,000+ types of steps.
+            </li>
+            <li>
+              Created generative Power Bi graph tool to visualize time elapsed
+              data.
+            </li>
+            <li>
+              Led a team of 3 developers, designing application and managing
+              workflow using Azure Devops and Scrum methodology.
+            </li>
+            <li>
+              Presented feature to company executives, including the president
+              and addressed discovered bugs in company's software.
+            </li>
+          </ul>
+          <h5>
+            Technologies Used: Javascript | ASP.NET | C# | T-SQL | Power Bi
+          </h5>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isEducationOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Education</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isEducationOpen" style="color: white">></div>
+            <div *ngIf="isEducationOpen" style="color: white">v</div>
+          </div>
+        </button>
+        <div style="text-align: left">
+          <h2 class="mb-0">Bachelor of Science in Computer Science</h2>
+          <a
+            href="https://www.ucla.edu/"
+            target="_blank"
+            class="text-decoration-none h3 text-primary"
+            rel="noopener noreferrer"
+          >
+            UCLA
+          </a>
+          <ul>
+            <li>GPA: 3.79</li>
+            <li>
+              Extracurriculars:
+              <a
+                href="https://www.ucladevx.com/"
+                target="_blank"
+                class="text-decoration-none text-primary"
+                rel="noopener noreferrer"
+              >
+                DevX</a
+              >,
+              <a
+                href="https://upe.seas.ucla.edu/"
+                target="_blank"
+                class="text-decoration-none text-primary"
+                rel="noopener noreferrer"
+              >
+                UPE</a
+              >,
+              <a
+                href="https://www.uclaacm.com/"
+                target="_blank"
+                class="text-decoration-none text-primary"
+                rel="noopener noreferrer"
+              >
+                ACM
+              </a>
+            </li>
+            <li>
+              Research Labs:
+              <a
+                href="https://communitypartnerships.ucla.edu/program/scalable-analytics-institute-scai/"
+                target="_blank"
+                class="text-decoration-none text-primary"
+                rel="noopener noreferrer"
+              >
+                ScAI Lab</a
+              >,
+              <a
+                href="https://www.lab-paris.com/"
+                target="_blank"
+                class="text-decoration-none text-primary"
+                rel="noopener noreferrer"
+              >
+                PARISlab
+              </a>
+            </li>
+            <li>
+              Relevant Coursework: Data Structures and Algorithms,
+              Object-oriented Programming, Operating Systems, Computer Networks,
+              Machine Learning, Natural Language Processing, Software
+              Engineering, Discrete Structures
+            </li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isSkillsOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Skills</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isSkillsOpen" style="color: white">></div>
+            <div *ngIf="isSkillsOpen" style="color: white">v</div>
+          </div>
+        </button>
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h3>Front End</h3>
+            <ul>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Angular</li>
+              <li>Typescript</li>
+              <li>Javascript</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Backend</h3>
+            <ul>
+              <li>Python</li>
+              <li>C/C++</li>
+              <li>C#</li>
+              <li>Java</li>
+              <li>Express.js</li>
+              <li>Flask</li>
+              <li>ASP.NET</li>
+              <li>MongoDB</li>
+              <li>SQL Server</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Developer Tools & Services</h3>
+            <ul>
+              <li>Git</li>
+              <li>Agile Methodology (Scrum)</li>
+              <li>Azure Devops</li>
+              <li>Power Bi</li>
+              <li>Unix</li>
+              <li>SVN</li>
+              <li>npm</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>
